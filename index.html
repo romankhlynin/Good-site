@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool site!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lobster', cursive;
+        }
+        html{
+            cursor: url(https://img.icons8.com/color/48/3d-pointer.png), auto;
+        }
+        .head{
+            margin-left: 40px;
+            color: rgb(109, 109, 109);
+            position: absolute;
+            
+        }
+        .butts{
+            display: flex;
+            justify-content: right;
+            margin-right: 30px;
+            font-size: 30px;
+        }
+        .but1{
+            margin-right: 30px;
+        }
+        .but2{
+            margin-right: 30px;
+        }
+        .but3{
+            margin-right: 30px;
+        }
+        .but4{
+            margin-right: 30px;
+        }
+        .but5{
+            margin-right: 30px;
+        }
+        .but1:hover{
+            border: 1px solid red;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .but2:hover{
+            border: 1px solid red;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .but3:hover{
+            border: 1px solid red;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .but4:hover{
+            border: 1px solid red;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .but5:hover{
+            border: 1px solid red;
+            border-radius: 5px;
+            padding: 2px;
+        }
+        .top{
+            background: rgb(0,223,71);
+            background: linear-gradient(0deg, rgba(0,223,71,0) 0%, rgba(254,252,52,0.6166841736694677) 24%);
+            display: grid;
+            position: relative;
+        }
+        .text2{
+            margin-left: 200px;
+            display: grid;
+        }
+        .head0{
+            color:rgb(153, 153, 153);
+        }
+        .head1{
+            font-size: 60px;
+            width: 500px;
+        }
+        .but6{
+            background-color: rgb(68, 68, 255);
+            width: 100px;
+            text-align: center;
+            width: 200px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 20px;
+            color: white;
+            font-size: 30px;
+        }
+        .but6:hover{
+            background-color: rgb(122, 122, 255);
+        }
+        .head2{
+            font-size: 35px;
+            width: 390px;
+        }
+        .img1{
+            border-radius: 100px;
+            transition: 1s;
+        }
+        .img1:hover{
+            transform: scale(100.4);
+        }
+        .acc{
+            display: flex;
+        }
+        .img2{
+            margin-left: 700px;
+            border-radius: 25px;
+            position: absolute;
+        }
+        .head3{
+            font-size: 50px;
+            width: 680px;
+        }
+        .text3{
+            margin-top: 260px;
+            margin-left: 800px;
+        }
+        .head4{
+            margin-bottom: -10px;
+            width: 500px;
+        }
+        .img3{
+            margin-right: 600px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        .img4{
+            border-radius: 20px;
+            margin-top: 200px;
+            margin-left: -400px;
+        }
+        .imgs{
+            display: flex;
+        }
+        .backgr{
+            background-color: rgb(235, 235, 255);
+            z-index: -10;
+            width: 1800px;
+            height: 1700px;
+            position: absolute;
+            margin-top: -1500px;
+            margin-left: 60px;
+            border-radius: 10px;
+        }
+        .vid1{
+            width: 800px;
+            margin-top: 100px;
+            border-radius: 20px;
+            z-index: 1;
+            transition: 1s;
+        }
+        .vid1:hover{
+            transform: scale(1.1);
+        }
+        .text4{
+            margin-left: 1000px;
+            position: absolute;
+            margin-top: 2200px;
+        }
+        .vid2{
+            width: 800px;
+            margin-top: 100px;
+            border-radius: 20px;
+            z-index: 1;
+            transition: 1s;
+            margin-left: 800px;
+        }
+        .vid2:hover{
+            transform: scale(1.1);
+        }
+        .text7{
+            margin-left: 200px;
+            position: absolute;
+            margin-top: 2800px;
+        }
+        .text10{
+            margin-top: 500px;
+        }
+        .head5{
+            text-align: center;
+            font-size: 20px;
+            color: rgb(82, 82, 82);
+        }
+        .head6{
+            text-align: center;
+            font-size: 60px;
+        }
+        .text11{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .img5{
+            width: 300px;
+            background-color: rgb(221, 247, 255);
+            border-radius: 20px;
+            width: 400px;
+            height: 300px;
+            box-shadow: 8px 8px rgb(146, 206, 255), 16px 18px rgb(221, 229, 255);
+            transition: 1s;
+            margin-left: 10px;
+        }
+        .img5:hover{
+            transform: scale(1.1);
+        }
+        .text12{
+            margin-left: 10px;
+            width: 290px;
+        }
+        .text13{
+            background: rgb(100,191,150);
+            background: linear-gradient(0deg, rgba(100,191,150,0) 0%, rgba(253,226,45,0.7903536414565826) 44%);
+            border-radius: 25px;
+            margin-top: 900px;
+            position: absolute;
+            width: 1600px;
+            height: 1000px;
+            margin-top: 1800px;
+        }
+        .head7{
+            margin-left: 100px;
+            font-size: 20px;
+            margin-top: 100px;
+        }
+        .head8{
+            margin-left: 100px;
+            font-size: 40px;
+            width: 500px;
+        }
+        .head9{
+            margin-left: 100px;
+            font-size: 18px;
+            width: 530px;
+        }
+        .text14{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-left: 50px;
+        }
+        .text15{
+            width:600px;
+        }
+        .head14{
+            margin-top: 400px;
+            margin-left: 60px;
+            font-size: 40px;
+            width: 400px;
+            margin-right: 100px;
+            position: absolute;
+        }
+        .https3{
+            margin-left: 1300px;
+            margin-top:430px;
+            text-decoration: none;
+            position: absolute;
+
+        }
+        .img6{
+            width: 300px;
+            background-color: rgb(221, 247, 255);
+            border-radius: 20px;
+            width: 400px;
+            height: 300px;
+            box-shadow: 8px 8px rgb(146, 206, 255), 16px 18px rgb(221, 229, 255);
+            transition: 1s;
+            margin-left: 10px;
+            
+        }
+        .img6:hover{
+            transform: scale(1.1);
+        }
+        .text21{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 700px;
+        }
+        .head15{
+            position: absolute;
+            font-size: 50px;
+            margin-top: 100px;
+            margin-left: 670px;
+        }
+        .slidercont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+       }
+       .slider{
+        width: 100%;
+        max-width: 600px;
+        height: 400px;
+        margin: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative; 
+      }
+       .slides{
+        display: flex;
+        overflow-x:scroll;
+        position: relative;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+       }
+       .slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 100%;
+        height: 400px;
+        scroll-snap-align: center;
+        margin-right: 0px;
+        box-sizing: border-box;
+        background: rgb(157, 248, 255);
+        transform-origin: center;
+        transform: scale(1);
+       }
+       .lol{
+        font-size: 40px;
+        font-weight: bold;
+        font-family: sans-serif;
+       }
+       .slidetext{
+        background: url(wkd2v.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        margin-left: 105px;
+        margin: auto;
+       }
+       .slidetext2{
+        background: url(donald_trump4.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        margin-left: 105px;
+        margin: auto;
+       }
+       .slidetext3{
+        background: url(bidencollar.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        margin-left: 105px;
+        margin-right: 10px;
+       }
+
+       .slidetext4{
+        background: url(20220911_203610.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        margin-left: 105px;
+        margin-right: 10px;
+       }
+       .slide a {
+        background: none;
+        border: none;
+       }
+       a.slideprev,
+       .slider::before{
+        transform: rotate(135deg);
+        transform: rotate(135deg);
+        left: 5%;
+       }
+       a.slidenext,
+       .slider::after{
+        transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        right: 5%;
+       }
+       .slider::before,
+       .slider::after,
+       .slideprev,
+       .slidenext {
+        position: absolute;
+        top: 48%;
+        width: 35px;
+        height: 35px;
+        border: solid red;
+        border-width: 0 4px 4px 0;
+        padding: 3px;
+        box-sizing: border-box;
+       }
+       .slider::before,
+       .slider::after {
+        content: "";
+        z-index: 1;
+        background: none;
+        pointer-events: none;
+       }
+       .but7{
+            background-color: rgb(68, 68, 255);
+            width: 100px;
+            text-align: center;
+            width: 200px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 20px;
+            color: white;
+            font-size: 30px;
+            margin-left: 690px;
+            margin-top: -100px;
+        }
+        .but7:hover{
+            background-color: rgb(122, 122, 255);
+        }
+        .bottom{
+            background-color: rgb(94, 94, 94);
+            margin-top: 3200px;
+            display: flex;
+            padding-top: 10px;
+            color: rgb(146, 146, 146);
+        }
+        .text22{
+            margin-left: 100px;
+            font-size: 25px;
+        }
+        .but8{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: 100px;
+        }
+        .but9{
+            margin-left: 200px;
+            font-size: 25px;
+        }
+        .but9:hover{
+            color: rgb(134, 134, 255);
+        }
+        .text20{
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="top">
+            <div class="butts">
+                <p class="but1">Home</p>
+                <p class="but2">Templates</p>
+                <p class="but3">Price</p>
+                <p class="but4">Help</p>
+                <p class="but5">Get in touch</p>    
+            </div>
+            <div class="head">
+                <h1>Space</h1>
+            </div>
+        </div>
+        <div class="text2">
+            <p class="head0">DESIGN INSPIRATION</p>
+            <h1 class="head1">Convallis turpis erat tempus, viverra aliquet.</h1>
+            <p class="but6">Get in touch</p>
+            <p class="head2">"I feel so much less stress ❤ as I know by the book."</p> 
+            <div class="acc">
+                <img class = "img1" src="Снимок экрана 2023-06-15 164841.png" alt="" width="70px" height="70px">
+                <div class="name">
+                    <h3>Andry Ford</h3>
+                    <p>CEO at Whatever</p>
+                </div>
+            </div>
+            <img src="221116-siri-said-happy-new-year-via-apple-watch.jpg" alt="" class="img2" width="1000px" height="800px">
+            <div class="text3">
+                <h1 class="head3">Requitements gathering and analysis for references.</h1>
+                <p class ="head4">Bla - bla bla bla bla bla bla bla, bla bla bla bla bla bla? Bla bla bla bla bla bla bla
+                bla bla bla bla bla bla bla bla bla bla bla, bla bla bla bla bla. Bla bla bla bla bla,
+                bla bla bla bla, bla bla bla bla bla bla bla bla bla! Bla bla bla bla bla bla bla bla
+                bla bla bla bla bla bla bla bla bla bla bla.</p>
+            </div>
+                <div class="imgs">
+                <img src="05151b2fe22a2fa515b85ef33dde.jpg" alt="" class="img3" width="400px" height="500px">        
+                <img src="city_texture6420.jpg" alt="" class="img4" width="900px" height="500px">
+            </div>   
+            <video src="BB_f1db64fb-f7c8-4575-ae04-f675104330af_FPpreview.mp4" class="vid1" loop autoplay muted></video>
+            <video src="BB_9572d4c3-e77c-4f2d-b4b7-4f5fbde56fe2_FPpreview.mp4" class="vid2" loop autoplay muted></video>
+            <div class="text4">
+                <h1 class="text5">Best Video of Best Videos of 2069.</h1>
+                <p class="text6">This video is AWESOME! I love it cuz its cool!!!</p>
+                <a href="https://www.youtube.com/watch?v=BL8ZKeGCaIg" class="https1">Experienced Team</a>
+            </div>
+            <div class="text7">
+                <h1 class="text8">Worst Video of Worst Videos of 2069.</h1>
+                <p class="text9">This video is SUCKS! I hate it cuz its dump!!!</p>
+                <a href="https://www.youtube.com/watch?v=BL8ZKeGCaIg" class="https2">Experienced Team</a>
+            </div>
+        </div>
+        <div class="backgr"></div>  
+        <div class="text10">
+            <p class = "head5">DESIGH CONCEPT</p>
+            <h1 class="head6">The Best Desigh for Your Studio Website</h1>
+        </div>
+        <div class="text11">
+            <div class="img5">
+                <h1 class="text12">Joe Biden</h1>
+                <p class="text12">Bla bla bla bla bla, bla bla bla and bla bla bla bla bla bla bla bla bla. Bla and bla, bla, bla bla bla bla bla! Bla bla bla bla bla bla bla bla bla bla bla.</p>
+                <a href="https://www.youtube.com/watch?v=BL8ZKeGCaIg" class="text12">Experienced Team </a>
+            </div>
+            <div class="img5">
+                <h1 class="text12">Donald Trump</h1>
+                <p class="text12">Bla bla bla bla bla, bla bla bla and bla bla bla bla bla bla bla bla bla. Bla and bla, bla, bla bla bla bla bla! Bla bla bla bla bla bla bla bla bla bla bla.</p>
+                <a href="https://www.youtube.com/watch?v=BL8ZKeGCaIg" class="text12"> Experienced Team</a>
+            </div>
+            <div class="img5">
+                <h1 class="text12">Barack Obama</h1>
+                <p class="text12">Bla bla bla bla bla, bla bla bla and bla bla bla bla bla bla bla bla bla. Bla and bla, bla, bla bla bla bla bla! Bla bla bla bla bla bla bla bla bla bla bla.</p>
+                <a href="https://www.youtube.com/watch?v=BL8ZKeGCaIg" class="text12"> Experienced Team</a>
+            </div>
+            <div class="text13">
+                <p class="head7">DESIGH CONCEPT</p>
+                <h1 class="head8">The Best Desigh for Your Studio Website</h1>
+                <p class ="head9">Bla - bla bla bla bla bla bla bla, bla bla bla bla bla bla? Bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla, bla bla bla bla bla. Bla bla bla bla bla,
+                    bla bla bla bla, bla bla bla bla bla bla bla bla bla! Bla bla bla bla bla bla bla bla
+                    bla bla bla bla bla bla bla bla bla bla bla.</p>
+                <div class="text14">
+                    <div class="head10">
+                        <img width="48" height="48" src="https://img.icons8.com/pastel-glyph/64/clock--v1.png" alt="">
+                        <h1>Design Concept</h1>
+                        <p class="text15">Just a Cool Guy ツ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, maiores cum nostrum animi iusto ratione velit inventore eligendi numquam adipisci.</p>
+                        
+                    </div>
+                    <div class="head11">
+                        <img width="48" height="48" src="https://img.icons8.com/pastel-glyph/64/clock--v1.png" alt="">
+                        <h1>Developing Website</h1>
+                        <p class="text15">Just a Cool Guy ツ. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum reprehenderit hic accusantium ipsa molestias libero nobis veniam! Voluptate, corrupti. Laudantium!</p>
+                    </div>
+                    <div class="head12">
+                        <img width="48" height="48" src="https://img.icons8.com/ios/50/box-important--v1.png" alt="box-important--v1"/>
+                        <h1>Design Concept</h1>
+                        <p class="text15">Just a Cool Guy ツ. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam dolorum magnam cum praesentium provident officiis culpa, necessitatibus distinctio porro eum.</p>
+                    </div>
+                    <div class="head13">
+                        <img width="48" height="48" src="https://img.icons8.com/ios/50/box-important--v1.png" alt="box-important--v1"/>
+                        <h1>Developing Website</h1>
+                        <p class="text15">Just a Cool Guy ツ. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas ullam, blanditiis harum aliquid minima ipsa corrupti voluptatem vero necessitatibus explicabo?</p>
+                    </div>
+                </div>
+                <div class="text16">
+                    <h1 class="head14">The Best Desigh for Your Studio Website</h1>
+                    <a href="https://www.youtube.com/watch?v=BL8ZKeGCaIg" class="https3">Experienced Team ></a>
+                </div>
+                <div class="text21">
+                    <div class="img6">
+                        <h1 class="text20">Lorem20</h1>
+                        <p class="text20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sint cumque officiis perferendis, tenetur maiores consequuntur eum asperiores       reiciendis minima.</p>
+                        <a href="https://www.youtube.com/watch?v=BL8ZKeGCaIg" class="text12">Experienced Team </a>
+                    </div>
+                    <div class="img6">
+                        <h1 class="text20">Lorem40</h1>
+                        <p class="text20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit earum dignissimos tempore aperiam delectus vero molestiae a placeat voluptatibus. Deleniti dignissimos, illo enim magnam quo error placeat asperiores, iusto facilis sunt ipsa aperiam! Fugit molestias porro sequi eos soluta?</p>
+                        <a href="https://www.youtube.com/watch?v=BL8ZKeGCaIg" class="text12"> Experienced Team</a>
+                    </div>
+                    <div class="img6">
+                        <h1 class="text20">Lorem60</h1>
+                        <p class="text20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi porro error praesentium rem assumenda, sunt nostrum ut, accusantium animi illum tempore. Magnam quibusdam, iste nihil odio iure, rem at maiores soluta, deleniti assumenda non earum possimus pariatur recusandae quod aperiam sit? Fuga earum cumque quia non tempora nostrum quam aspernatur vitae amet, mollitia temporibus animi vero doloremque modi dolores veritatis!</p>
+                        <a href="https://www.youtube.com/watch?v=BL8ZKeGCaIg" class="text12"> Experienced Team</a>
+                    </div>
+                </div>
+                <h1 class="head15">OUR TEAM</h1>
+                <div class="slidercont">
+                    <div class="slider">
+                        <div class="slides">
+                            <div id = "slides1" class="slide">
+                                <span class="slidetext"></span>
+                                <a href="#slides4" class="slideprev" title="Next"></a>
+                                <a href="#slides2" class="slidenext" title="Next"></a>
+                            </div>
+                            <div id = "slides2" class="slide">
+                                <span class="slidetext2"></span>
+                                <a href="#slides1" class="slideprev" title="Prev"></a>
+                                <a href="#slides3" class="slidenext" title="Next"></a>
+                            </div>
+                            <div id = "slides3" class="slide">
+                                <span class="slidetext3"></span>
+                                <a href="#slides2" class="slideprev" title="Prev"></a>
+                                <a href="#slides4" class="slidenext" title="Next"></a>
+                            </div>
+                            <div id = "slides4" class="slide">
+                                <span class="slidetext4"></span>
+                                <a href="#slides3" class="slideprev" title="Prev"></a>
+                                <a href="#slides1" class="slidenext" title="Prev"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="but7">JOIN US</h1>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="text22">Thanks for being on this website! You're the Best person, because you found this website! Have a good luck ❤</p>
+            <div class="but8">
+                <p class="but9">Lorem</p>
+                <p class="but9">Ipsum</p>
+                <p class="but9">Dolor</p>
+                <p class="but9">Sit</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
